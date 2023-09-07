@@ -1,0 +1,18 @@
+CREATE DATABASE postgres;
+
+CREATE TABLE admin(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255),
+  email VARCHAR(255),
+  role VARCHAR(255),
+  password VARCHAR(255)
+);
+
+CREATE TABLE emp(id SERIAL PRIMARY KEY,name VARCHAR(50),email VARCHAR(50),date VARCHAR(50));
+
+CREATE TABLE file(
+  id SERIAL PRIMARY KEY,
+  file VARCHAR(255),
+  date VARCHAR(50),
+  name VARCHAR(50),
+);
